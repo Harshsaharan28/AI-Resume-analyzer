@@ -1,0 +1,6 @@
+project:
+  name: "AI Resume Analyzer"
+  version: "0.1.0"
+  description: "A GenAI SaaS app for resume analysis using OpenSpec + Code-Supernova."
+  author: "EloiRamos"
+spec_path: "./specs"

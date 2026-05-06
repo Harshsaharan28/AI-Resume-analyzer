@@ -95,38 +95,44 @@ The platform analyzes resumes based on:
 - Keyword matching
 - Overall presentation
 
----
+## 🧱 Project Structure
 
---- ## 🧱 Project Structure
-ai-resume-analyzer/
+```bash
+AI-Resume-analyzer/
+│
 ├── app/
 │   ├── api/
 │   │   ├── analyze/
 │   │   │   └── route.ts
 │   │   ├── upload/
 │   │   │   └── route.ts
-│   │   └── auth/
+│   │   └── dashboard/
 │   │       └── route.ts
+│   │
+│   ├── dashboard/
+│   ├── upload/
+│   ├── analyze/
 │   ├── layout.tsx
 │   └── page.tsx
+│
 ├── components/
 │   ├── ui/
-│   │   └── Button.tsx
-│   └── ResumeCard.tsx
-├── openspec/
-│   └── specs/
-│       ├── project.md
-│       ├── features.md
-│       └── api.md
-├── .kilocode/
-│   └── workflows/
-│       ├── openspec-apply.md
-│       ├── openspec-archive.md
-│       └── openspec-proposal.md
+│   ├── dashboard/
+│   └── upload/
+│
+├── lib/
+│   ├── analysis-storage.ts
+│   └── utils.ts
+│
+├── uploads/
+├── public/
+├── styles/
+│
 ├── package.json
 ├── tsconfig.json
+├── tailwind.config.ts
 └── .env.local
----
+```
 
 ## 📌 API Routes
 

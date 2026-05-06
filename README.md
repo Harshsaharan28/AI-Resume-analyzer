@@ -1,240 +1,141 @@
-# 🧠 AI Resume Analyzer
+# 🧠 ResumeIQ AI
 
-A **modern AI-powered SaaS** for analyzing resumes with **dynamic scoring (0–100)** and intelligent insights.  
-Built with **Next.js 14**, **TypeScript**, and **OpenAI GPT-4o-mini** — fully spec-driven via **OpenSpecs**.
+An AI-powered resume analysis platform that helps users evaluate resumes with smart scoring, keyword optimization, and ATS-focused insights.
 
-> **v1.1.0 Update:** Added dynamic scoring engine, improved AI analysis prompts, and refined dashboard UI.
+Built using Next.js, TypeScript, Tailwind CSS, and OpenAI integration.
 
 ---
 
-## ⚡ Quickstart
+## 🚀 Features
+
+- 📄 Upload PDF/DOCX resumes
+- 🤖 AI-powered resume analysis
+- 📊 Dynamic resume scoring
+- 🎯 ATS keyword optimization
+- 💡 Suggestions for improvement
+- 📱 Responsive modern UI
+- ⚡ Fast Next.js performance
+
+---
+
+## 🛠 Tech Stack
+
+- Next.js 14
+- TypeScript
+- React
+- Tailwind CSS
+- OpenAI API
+- PDF/DOCX Parsing
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/EloiRamos/ai-resume-analyzer.git
-cd ai-resume-analyzer
-npm install
-npm run dev
+git clone https://github.com/Harshsaharan28/AI-Resume-analyzer.git
+cd AI-Resume-analyzer
 ```
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
-## 🎨 Application Interface
-
-![Main Interface](assets/images/main_interface.png)
-
-*AI Resume Analyzer dashboard displaying dynamic scoring and insights.*
-
-**Example Results**
-| Role              | Score      | Highlights                                      |
-| ----------------- | ---------- | ----------------------------------------------- |
-| 🤖 AI/ML Engineer  | **78/100** | Excellent technical stack and ML experience     |
-| 📈 Project Manager | **82/100** | Strong leadership and business domain knowledge |
-
----
-
-## ✨ Key Features
-
-- 🎨 **Modern UI/UX** – Clean Tailwind-powered design with responsive layout  
-- 📄 **Smart Upload** – Drag-and-drop PDF/DOCX uploads with validation  
-- 🤖 **AI Resume Analysis** – GPT-4o-mini driven insights and scoring  
-- 📊 **Interactive Dashboard** – Real-time metrics and analytics  
-- 🔐 **Authentication-Ready** – NextAuth.js compatible login flow  
-- ⚡ **Fast & Reliable** – Optimized performance and error handling  
-- 📋 **Spec-Driven Architecture** – Uses OpenSpecs for reproducible development
-
----
-
-## 🧩 Tech Stack
-
-- **Frontend:** Next.js 14 + TypeScript + React 18  
-- **Styling:** Tailwind CSS + custom design system  
-- **AI:** OpenAI GPT-4o-mini via OpenAI API  
-- **File Handling:** PDF/DOCX parsing  
-- **Auth:** NextAuth.js-ready configuration  
-- **Deployment:** Optimized for Vercel
-
----
-
-## ⚙️ Getting Started
-
-### Prerequisites
-- Node.js 18+  
-- OpenAI API key  
-
-### Installation
+Install dependencies:
 
 ```bash
-git clone https://github.com/EloiRamos/ai-resume-analyzer.git
-cd ai-resume-analyzer
 npm install
 ```
-
-### Environment Variables
 
 Create `.env.local`:
+
 ```env
-OPENAI_API_KEY=sk-your-key-here
-NEXTAUTH_SECRET=<your-random-secret>
-NEXTAUTH_URL=http://localhost:3000
+OPENAI_API_KEY=your_api_key_here
 ```
 
-Generate a secret:
-```bash
-node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-```
-
-### Run Locally
+Run the development server:
 
 ```bash
 npm run dev
 ```
 
-Then visit [http://localhost:3000](http://localhost:3000)
+Open:
 
----
-
-## 🧪 Usage
-
-| Command         | Purpose                 |
-| --------------- | ----------------------- |
-| `npm run dev`   | Start dev server        |
-| `npm run build` | Build for production    |
-| `npm run start` | Start production server |
-
-### Testing Endpoints
-
-- `POST /api/upload` → Upload resume  
-- `POST /api/analyze` → Analyze resume  
-- `GET /api/dashboard` → Dashboard metrics  
-
----
-
-## 🤖 AI Scoring System
-
-| Score Range | Description                                                |
-| ----------- | ---------------------------------------------------------- |
-| 90–100      | Excellent – Outstanding formatting, skills, and experience |
-| 80–89       | Good – Strong with minor improvements                      |
-| 70–79       | Fair – Decent but needs optimization                       |
-| 60–69       | Poor – Missing structure or keywords                       |
-| 0–59        | Very Poor – Major issues or missing sections               |
-
-**Analysis Dimensions**
-- Skills & relevance  
-- Experience quality  
-- Education & certifications  
-- ATS optimization  
-- Strengths & weaknesses  
-- Keyword optimization  
-
----
-
-## 🧱 Project Structure
-
-```
-ai-resume-analyzer/
-├── app/
-│   ├── api/
-│   │   ├── analyze/
-│   │   │   └── route.ts
-│   │   ├── upload/
-│   │   │   └── route.ts
-│   │   └── auth/
-│   │       └── route.ts
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── ui/
-│   │   └── Button.tsx
-│   └── ResumeCard.tsx
-├── openspec/
-│   └── specs/
-│       ├── project.md
-│       ├── features.md
-│       └── api.md
-├── .kilocode/
-│   └── workflows/
-│       ├── openspec-apply.md
-│       ├── openspec-archive.md
-│       └── openspec-proposal.md
-├── package.json
-├── tsconfig.json
-└── .env.local
+```text
+http://localhost:3000
 ```
 
 ---
 
-## 📘 OpenSpecs Integration
+## 📊 Resume Analysis Features
 
-This project uses **OpenSpecs** as a single source of truth for API and feature definitions  
-(`openspec/specs/` → `project.md`, `features.md`, `api.md`).
+The platform analyzes:
+- Technical skills
+- Resume structure
+- ATS compatibility
+- Experience relevance
+- Education details
+- Keyword optimization
 
-Developers can:
-- Update specs → Regenerate scaffold → Sync codebase  
-- Keep architecture consistent across teams  
+The system generates:
+- Resume score
+- Strengths
+- Weaknesses
+- Improvement suggestions
+- Recommended keywords
 
-### Optional: Code Generation with Code-Supernova
+---
 
-If you have Code-Supernova installed:
+## 📂 Project Structure
 
 ```bash
-npm run supernova
+app/
+components/
+lib/
+uploads/
+public/
 ```
 
-- Reads `openspec/specs/*.md`  
-- Updates routes, components, and API endpoints  
-- Keeps code synchronized with specs  
+---
 
-> Optional workflow: Edit specs → `npm run supernova` → `npm run dev`
+## 🖼 Screenshots
+
+Add your screenshots here.
+
+Example:
+- Landing page
+- Upload section
+- Analysis dashboard
+- Resume score results
 
 ---
 
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+This project can be deployed easily using Vercel.
 
-1. Push to GitHub  
-2. Connect repo in [Vercel Dashboard](https://vercel.com)  
-3. Add environment variables  
-4. Deploy 🎉  
-
-> Compatible with other Node.js hosts too.
+```bash
+npm run build
+```
 
 ---
 
-## 🤝 Contributing
+## 📌 Future Improvements
 
-1. Fork the repository  
-2. Create a feature branch  
-3. Implement and test your changes  
-4. Submit a pull request  
+- Authentication system
+- Resume templates
+- AI interview preparation
+- Job recommendation system
+- Export analysis reports
 
 ---
 
-## 🧾 Changelog
+## 👨‍💻 Author
 
-### v1.1.0
-- 🔧 Dynamic scoring bug fixed  
-- 🤖 Enhanced AI prompt engineering  
-- 🎨 Improved dashboard UI  
-- ⚡ Robust error handling  
-- 🪶 Updated docs  
+Harsh Saharan
 
-### v1.0.0
-- Initial release with resume analysis and dashboard  
+GitHub:
+https://github.com/Harshsaharan28
 
 ---
 
 ## 📄 License
 
-MIT License © 2025   
-See [LICENSE](LICENSE) for details.
-
----
-
-## 💬 Support
-
-For questions or feedback, please open a GitHub issue.
-
+MIT License

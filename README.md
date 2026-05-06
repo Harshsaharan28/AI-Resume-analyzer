@@ -97,32 +97,35 @@ The platform analyzes resumes based on:
 
 ---
 
-## 📁 Project Structure
-
-```bash
-AI-Resume-analyzer/
-│
+--- ## 🧱 Project Structure
+ai-resume-analyzer/
 ├── app/
 │   ├── api/
 │   │   ├── analyze/
+│   │   │   └── route.ts
 │   │   ├── upload/
-│   │   └── dashboard/
-│   │
-│   ├── dashboard/
-│   ├── upload/
-│   └── analyze/
-│
+│   │   │   └── route.ts
+│   │   └── auth/
+│   │       └── route.ts
+│   ├── layout.tsx
+│   └── page.tsx
 ├── components/
-├── lib/
-├── uploads/
-├── public/
-├── styles/
-│
+│   ├── ui/
+│   │   └── Button.tsx
+│   └── ResumeCard.tsx
+├── openspec/
+│   └── specs/
+│       ├── project.md
+│       ├── features.md
+│       └── api.md
+├── .kilocode/
+│   └── workflows/
+│       ├── openspec-apply.md
+│       ├── openspec-archive.md
+│       └── openspec-proposal.md
 ├── package.json
 ├── tsconfig.json
 └── .env.local
-```
-
 ---
 
 ## 📌 API Routes

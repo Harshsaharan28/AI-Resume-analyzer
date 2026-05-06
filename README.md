@@ -6,6 +6,18 @@ Built with **Next.js 14**, **TypeScript**, and modern full-stack tooling.
 
 ---
 
+## ⚡ Features
+
+- 📄 Resume upload support (PDF & DOCX)
+- 🤖 AI-powered resume analysis
+- 📊 Dynamic resume scoring system
+- 🧠 Skills and keyword extraction
+- 📈 Dashboard analytics
+- 🎨 Responsive modern UI
+- ⚡ Fast API routes with Next.js
+- 🔐 Environment-based configuration
+
+---
 
 ## 🧩 Tech Stack
 

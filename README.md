@@ -1,56 +1,75 @@
 # 🧠 ResumeIQ AI
 
-An AI-powered resume analysis platform that helps users evaluate resumes with smart scoring, keyword optimization, and ATS-focused insights.
+An AI-powered resume analysis platform built to help users evaluate resume quality, improve ATS compatibility, and identify skill gaps using intelligent scoring and structured insights.
 
-Built using Next.js, TypeScript, Tailwind CSS, and OpenAI integration.
+Built with **Next.js 14**, **TypeScript**, and modern full-stack tooling.
 
 ---
 
-## 🚀 Features
+## ⚡ Features
 
-- 📄 Upload PDF/DOCX resumes
+- 📄 Resume upload support (PDF & DOCX)
 - 🤖 AI-powered resume analysis
-- 📊 Dynamic resume scoring
-- 🎯 ATS keyword optimization
-- 💡 Suggestions for improvement
-- 📱 Responsive modern UI
-- ⚡ Fast Next.js performance
+- 📊 Dynamic resume scoring system
+- 🧠 Skills and keyword extraction
+- 📈 Dashboard analytics
+- 🎨 Responsive modern UI
+- ⚡ Fast API routes with Next.js
+- 🔐 Environment-based configuration
 
 ---
 
-## 🛠 Tech Stack
+## 🧩 Tech Stack
 
+### Frontend
 - Next.js 14
+- React 18
 - TypeScript
-- React
 - Tailwind CSS
+
+### Backend
+- Next.js API Routes
+- Node.js
+
+### File Processing
+- pdf-parse
+- mammoth
+
+### AI Integration
 - OpenAI API
-- PDF/DOCX Parsing
 
 ---
 
-## ⚙️ Installation
+## 🚀 Getting Started
 
-Clone the repository:
+### Clone Repository
 
 ```bash
 git clone https://github.com/Harshsaharan28/AI-Resume-analyzer.git
 cd AI-Resume-analyzer
 ```
 
-Install dependencies:
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-Create `.env.local`:
+---
+
+## 🔑 Environment Variables
+
+Create a `.env.local` file:
 
 ```env
-OPENAI_API_KEY=your_api_key_here
+OPENAI_API_KEY=your_openai_api_key
+NEXTAUTH_SECRET=your_secret
+NEXTAUTH_URL=http://localhost:3000
 ```
 
-Run the development server:
+---
+
+## ▶️ Run Development Server
 
 ```bash
 npm run dev
@@ -58,7 +77,7 @@ npm run dev
 
 Open:
 
-```text
+```bash
 http://localhost:3000
 ```
 
@@ -66,76 +85,98 @@ http://localhost:3000
 
 ## 📊 Resume Analysis Features
 
-The platform analyzes:
+The platform analyzes resumes based on:
+
 - Technical skills
+- ATS optimization
 - Resume structure
-- ATS compatibility
 - Experience relevance
 - Education details
-- Keyword optimization
-
-The system generates:
-- Resume score
-- Strengths
-- Weaknesses
-- Improvement suggestions
-- Recommended keywords
+- Keyword matching
+- Overall presentation
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```bash
-app/
-components/
-lib/
-uploads/
-public/
+AI-Resume-analyzer/
+│
+├── app/
+│   ├── api/
+│   │   ├── analyze/
+│   │   ├── upload/
+│   │   └── dashboard/
+│   │
+│   ├── dashboard/
+│   ├── upload/
+│   └── analyze/
+│
+├── components/
+├── lib/
+├── uploads/
+├── public/
+├── styles/
+│
+├── package.json
+├── tsconfig.json
+└── .env.local
 ```
 
 ---
 
-## 🖼 Screenshots
+## 📌 API Routes
 
-Add your screenshots here.
+| Route | Description |
+|---|---|
+| `/api/upload` | Upload resume |
+| `/api/analyze` | Analyze uploaded resume |
+| `/api/dashboard` | Fetch dashboard metrics |
 
-Example:
-- Landing page
-- Upload section
-- Analysis dashboard
-- Resume score results
+---
+
+## 🎨 UI Highlights
+
+- Modern dashboard layout
+- Responsive design
+- Smooth upload workflow
+- Real-time analysis feedback
+- Clean analytics interface
+
+---
+
+## 🛠 Future Improvements
+
+- Authentication system
+- Resume history tracking
+- Multi-template resume generation
+- AI interview preparation
+- Job matching recommendations
 
 ---
 
 ## 🚀 Deployment
 
-This project can be deployed easily using Vercel.
+Optimized for deployment on:
 
-```bash
-npm run build
-```
-
----
-
-## 📌 Future Improvements
-
-- Authentication system
-- Resume templates
-- AI interview preparation
-- Job recommendation system
-- Export analysis reports
-
----
-
-## 👨‍💻 Author
-
-Harsh Saharan
-
-GitHub:
-https://github.com/Harshsaharan28
+- Vercel
+- Netlify
+- Render
 
 ---
 
 ## 📄 License
 
 MIT License
+
+---
+
+## 👨‍💻 Developer Notes
+
+This project was built as a full-stack AI application focused on:
+- resume intelligence,
+- AI-assisted evaluation,
+- dashboard-driven analytics,
+- and scalable Next.js architecture.
+
+The project is actively being improved with additional AI and analytics features.
